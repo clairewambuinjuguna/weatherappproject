@@ -88,3 +88,25 @@ function formatDate(date) {
   let formattedDay = days[day];
   return `${formattedDay} ${hours}:${minutes}`;
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml += `
+      <div class="row">
+        <div class="col-2">
+          <div class="weather-forecast-date">${day}</div>
+          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" alt="" />
+          <div class="weather-forecast-temperature">
+            <span class="max-temp">18</span> 
+            <span class="min-temp">12</span>
+          </div>
+        </div>
+      </div>`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
