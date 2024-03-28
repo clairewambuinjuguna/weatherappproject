@@ -116,3 +116,6 @@ body {
 .weather-forecast-date {
   font-size: 16px;
 }
+.forecast-icon {
+  width: 50px;
+}

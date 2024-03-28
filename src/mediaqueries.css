@@ -1,0 +1,32 @@
+@media screen and (max-width: 469px) {
+  .card {
+    min-width: 450px;
+  }
+  .search {
+    display: flex;
+
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto !important;
+  }
+  .search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  .search input {
+    padding-right: 40px;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  .weather p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .weather p {
+    display: inline-flex;
+  }
+}
