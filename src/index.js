@@ -39,7 +39,6 @@ async function checkWeather(city) {
     weatherIcon.src = "./assets/snow.png";
   }
 
-  // Update weather description
   weatherDescription.textContent = data.weather[0].description;
 
   document.querySelector(".weather").style.display = "block";
